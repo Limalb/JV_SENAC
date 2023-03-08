@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+        let vetor = new Array(10)
+        
+
+        for(let i = 1 ; i < vetor.length ; i++){
+            vetor[i] = new Array(prompt("Digite o valor do produto :" + i))
+            vetor[i] = parseInt(vetor[i])
+
+            total += vetor[i]
+            
+            document.write('Valores ' + [i] + ': R$'  + vetor[i] + '<br>')
+  
+        }
+        
+        document.write('<br>' + 'Valor total dos produtos: R$ ' + total + '<br>')
+       
+        pagamento = prompt("Pagemento Debito ou Credito - Digite 'c' para Credito ou digite 'd' para Debito")
+        
+        if(pagamento === "c"){
+          document.write('R$' + total + ' no Crédito')
+        } else {
+          document.write('R$' + total + ' no Debito')
+        }
+
+
+    </script>
+  </body>
+</html>
