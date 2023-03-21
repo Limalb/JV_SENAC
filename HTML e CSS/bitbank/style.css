@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.percentual{
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    padding: 10px;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('slider/slider-bg-2.jpg');
+}
+.banner:before{
+    content: " ";
+    background: rgba(51, 186, 157, 0.50);
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
